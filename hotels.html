@@ -6,7 +6,7 @@
 	</head>
 	<body>
 		<header class="main-header">
-			<a class="site-logo">
+			<a class="site-logo" href="index.html">
 				<img src="img/logo.jpg" width="" height="" alt="Логотип City of Sedona">
 			</a>
 			<nav class="main-navigation">
@@ -20,18 +20,19 @@
 		</header>
 		
 		<main class="page-hotels">			
-			<section class="conditions">
+			<section class="filter">
+				<h2 class="visually-hidden">Фильтр отелей</h2>
 				<h3>Инфраструктура</h3>
-				<ul class="conditions-list">
-					<li class="conditions-list-item">Бассейн</li>
-					<li class="conditions-list-item">Парковка</li>
-					<li class="conditions-list-item">Wi-Fi</li>
+				<ul class="filter-list">
+					<li class="filter-list-item">Бассейн</li>
+					<li class="filter-list-item">Парковка</li>
+					<li class="filter-list-item">Wi-Fi</li>
 				</ul>
 				<h3>Тип жилья</h3>
-				<ul class="conditions-list">
-					<li class="conditions-list-item">Гостиница</li>
-					<li class="conditions-list-item">Мотель</li>
-					<li class="conditions-list-item">Апартаменты</li>
+				<ul class="filter-list">
+					<li class="filter-list-item">Гостиница</li>
+					<li class="filter-list-item">Мотель</li>
+					<li class="filter-list-item">Апартаменты</li>
 				</ul>
 				<div class="price-form">
 					<h3>Стоимость в сутки (р):</h3>
@@ -42,43 +43,43 @@
 			
 			<section class="search-result">
 				<h3>Найдено:</h3>
-				<ul class="sort-list">				
-					<li class="sort-list-item">Сортировка:</li>
-					<li class="sort-list-item">
+				<ul class="searh-result-sort">				
+					<li class="sort-item">Сортировка:</li>
+					<li class="sort-item">
 						<a class="sort-type">По цене</a>
 					</li>
-					<li class="sort-list-item">
+					<li class="sort-item">
 						<a class="sort-type">По типу</a>
 					</li>
-					<li class="sort-list-item">
+					<li class="sort-item">
 						<a class="sort-type">По рейтингу</a>
 					</li>
 				</ul>					
 				
-				<ul class="search-result-variants">
-					<li>
-						<img class="preview" src="img/amara_preview.jpg">
-						<h2>Amara Resort & SPA</h2>
+				<ul class="search-result-list">
+					<li class="search-result-item">
+						<img class="preview" src="img/amara_preview.jpg">						
+						<h3>Amara Resort & SPA</h3>
 						<p>Гостиница от 4000 Р.</p>
 						<p class="rating">Рейтинг:</p>
-						<button class="details">Подробнее</button>
-						<button class="book">Забронировать</button>
+						<a class="button button-blue">Подробнее</a>
+						<a class="button button-grey">Забронировать</a>						
 					</li>
-					<li>
+					<li class="search-result-item">
 						<img class="preview" src="img/quail_preview.jpg">
-						<h2>Desert Quail Inn</h2>
+						<h3>Desert Quail Inn</h3>
 						<p>Мотель от 3000 Р.</p>
 						<p class="rating">Рейтинг:</p>
-						<button class="details">Подробнее</button>
-						<button class="book">Забронировать</button>
+						<a class="button button-blue">Подробнее</a>
+						<a class="button button-grey">Забронировать</a>		
 					</li>
 					<li>
 						<img class="preview" src="img/poco_diablo_preview.jpg">
-						<h2>Villas At Poco Diablo</h2>
+						<h3>Villas At Poco Diablo</h3>
 						<p>Гостиница от 4000 Р.</p>
 						<p class="rating">Рейтинг:</p>
-						<button class="details">Подробнее</button>
-						<button class="book">Забронировать</button>
+						<a class="button button-blue">Подробнее</a>
+						<a class="button button-grey">Забронировать</a>		
 					</li>
 				</ul>				
 			</section>			
