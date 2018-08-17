@@ -85,7 +85,28 @@
 				<button class="button button-grey">Поиск гостиницы в Седоне</button>
 			</section>
 			
-			<!--форма-->
+			<form class="search" method="post" action="https://echo.htmlacademy.ru">
+				<p>
+					<label for="arrival-date">Дата заезда:</label>
+					<input id="arrival-date" type="date" name="arrival-date" placeholder="Выберите дату заезда">
+				</p>
+				<p>
+					<label for="departure-date">Дата выезда</label>
+					<input id="departure-date" type="date" name="departure-date" placeholder="Выберите дату отъезда">
+				</p>
+				<p>
+					Взрослые:
+					<button type="button" class="plus">+</button>
+					0
+					<button type="button" class="minus">-</button>
+					Дети:
+					<button type="button" class="plus">+</button>
+					0
+					<button type="button" class="minus">-</button>
+				</p>
+				<button class="search-go" type="submit">Найти</button>
+			</form>
+			
 			<div class="map">
 				<img src="img/map.jpg" width="1199" height="593" alt="Map">
 			</div>
@@ -103,9 +124,9 @@
 				</p>
 				
 				
-			</footer>
-			
-			
+				</footer>
+				
+				
 		</main>
 		
 		
