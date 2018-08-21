@@ -1,0 +1,221 @@
+@font-face {
+	font-family: "PT Sans";
+	src: url("../fonts/ptsans.woff") format("woff"),
+	url("../fonts/ptsans.woff2") format("woff2");
+}
+@font-face {
+	font-family: "PT Sans Bold";
+	src: url("../fonts/ptsansbold.woff") format("woff"),
+	url("../fonts/ptsansbold.woff2") format("woff2");
+}
+
+body {
+	margin:0;
+	padding:0;
+
+	font-family: "PT Sans", Arial, sans-serif;
+	font-size:14px;
+	line-height:26px;
+	font-weight: normal;
+	color: #000000;
+	text-transform: uppercase;
+	background-color: #f2f2f2;
+	/*background-image: url("../img/intro-background.jpg");
+		background-position: top center;
+	background-repeat: no-repeat;*/
+}
+
+a {
+	text-decoration: none;
+}
+
+.main-header {
+	font-family: "PT Sans Bold", Arial, sans-serif;
+	font-size: 14px;
+	font-weight:700;
+	line-height: 26px;
+	background-color: #ffffff;
+}
+.site-navigation {
+	list-style: none;
+}
+.site-navigation a {
+	color: #000000;
+}
+
+.welcome-background {
+	height:800px;
+	background-image: url("../img/intro-background.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.text-bold {
+	font-family: "PT Sans Bold", Arial, sans-serif;
+	font-size:21px;
+	line-height:26px;
+	text-align: center;
+}
+.text-thin {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 26px;
+  font-weight: normal;
+  text-align: center;
+}
+.reasons-big {
+  background-color: #81b3d2;
+}
+.reasons-big-content h3 {
+  font-family: "PT Sans Bold", Arial, sans-serif;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 21px;
+  text-align: center;
+  color: white;
+}
+.reasons-big-content p {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size:14px;
+  line-height: 21px;
+  font-weight: normal;
+  text-align: center;
+  color: white;
+}
+.reasons-small h3 {
+  font-family: "PT Sans Bold", Arial, sans-serif;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 21px;
+  text-align: center;
+}
+.advices-list {
+  list-style: none;
+}
+.advices-list h3 {
+  font-family: "PT Sans Bold", Arial, sans-serif;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 21px;
+  text-align: center;
+}
+.search-booking {
+  text-align: center;
+}
+.search-booking b {
+  font-family: "PT Sans Bold", Arial, sans-serif;
+  font-size:30px;
+  font-weight: normal;
+  line-height: 36px;
+  color: black;
+}
+.button {
+  font: inherit;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+  color: white;
+}
+.button-grey {
+  background-color: #766357;
+}
+.button-blue {
+  background-color: #81b3d2;
+}
+.search-booking button {
+  font-family: "PT Sans Bold", Arial, sans-serif;
+  font-size: 21px;
+  line-height: 26px;
+  padding: 35px 140px;
+}
+.search-booking .button:hover,
+.search-booking .button:focus {
+ background-color: #604e43;
+}
+.search-booking .button:active {
+ background-color: #503e33;
+}
+.guests-amount {
+   border: none;
+   font-size: 14px;
+   line-height: 26px;
+   font-family: "PT Sans", Arial, sans-serif;
+ }
+.search {
+  text-align: center;
+}
+.search .button {
+  font-family: "PT Sans Bold", Arial, sans-serif;
+  font-size: 21px;
+  line-height: 26px;
+  padding: 17px 195px;
+}
+.search .button:hover,
+.search .button:focus {
+  background-color: #669ec0;
+}
+.search .button:active {
+  background-color: #5496bd;
+}
+.search p {
+  font-family: "PT Sans Bold", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+}
+.main-footer a {
+  color: black;
+}
+.main-footer-hashtag {
+  text-align: center;
+  font-family: "PT Sans Bold", Arial, sans-serif;
+  font-size: 21px;
+  line-height: 26px;
+}
+.main-footer-social {
+  list-style: none;
+  text-align: center;
+}
+.social-button:hover,
+.social-button:focus {
+  background-color: #669ec0;
+}
+.social-button:active{
+  background-color: #5496bd;
+}
+.main-footer-developer {
+  text-align: center;
+}
+
+/*.developer-logo {
+  background-image: url("../img/html-academy.svg");
+  background-repeat: no-repeat;
+  filter: invert(100%);
+}*/
+
+/* inner */
+.filter {
+  background-image: url("../img/intro-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  /*filter: blur(5px);*/
+  background-color: #81b3d2;
+}
+.filter-list {
+  list-style: none;
+}
+.filter-form {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  color: white;
+
+}
+.filter-form legend {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 21px;
+  color: white;
+}
+.search-result {
+
+}

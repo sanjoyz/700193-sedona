@@ -3,6 +3,8 @@
 	<head>
 		<meta charset="utf-8">
 		<title>HTML Academy: Седона</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 	</head>
 	<body>
 		<header class="main-header">
@@ -18,8 +20,8 @@
 				</ul>
 			</nav>
 		</header>
-		
-		<main class="page-hotels">			
+
+		<main class="page-hotels">
 			<section class="filter">
 				<h2 class="visually-hidden">Фильтр отелей</h2>
 				<form class="filter-form" method="post" action="https://echo.htmlacademy.ru" oninput="costvalue.value = cost.valueAsNumber">
@@ -44,10 +46,10 @@
 						<legend>Тип жилья</legend>
 						<ul class="filter-list">
 							<li class="filter-list-item">
-								<input class="visually-hidden filter-input-check" type="checkbox" id="filter-hotel" name="hotel">							
+								<input class="visually-hidden filter-input-check" type="checkbox" id="filter-hotel" name="hotel">
 								<label for="filter-hotel">Гостиница</label>
-							</li>
-							<li class="filter-list-item">
+								</li>
+								<li class="filter-list-item">
 								<input class="visually-hidden filter-input-check" type="checkbox" id="filter-motel" name="motel">
 								<label for="filter-motel">Мотель</label>
 							</li>
@@ -56,23 +58,23 @@
 								<label for="filter-apparts">Апартаменты</label>
 							</li>
 						</ul>
-					</fieldset>					
-					
+					</fieldset>
+
 					<div class="price-form">
-						<h3>Стоимость в сутки (р):</h3>						
+						<h3>Стоимость в сутки (р):</h3>
 						<input class="filter-input-range" name="cost" type="range" min="0" max="5000" step="100">
 						<output name="costvalue" for="cost">2500</output>
-						<button class="range-button" type="button">Показать</button>
-						<button class="range-button" type="button">Показать</button>
-						<button class="button" type="submit">Показать</button>
-					</div>										
+						<button class="range-button" type="button"></button>
+						<button class="range-button" type="button"></button>
+						<button class="button-white" type="submit">Показать</button>
+					</div>
 				</form>
 			</section>
-			
+
 			<section class="search-result">
-				<p class="search-result-count">Найдено:</p>				
+				<p class="search-result-count">Найдено:</p>
 				<h3>Сортировка:</h3>
-				<ul class="searh-result-sort">					
+				<ul class="searh-result-sort">
 					<li class="sort-item">
 						<a class="sort-type" href="#">По цене</a>
 					</li>
@@ -82,8 +84,8 @@
 					<li class="sort-item">
 						<a class="sort-type" href="#">По рейтингу</a>
 					</li>
-				</ul>					
-				
+				</ul>
+
 				<ul class="search-result-list">
 					<li class="search-result-item">
 						<img class="preview" src="img/preview1.jpg" width="135" height="90" alt="Amara Resort & SPA">
@@ -92,45 +94,45 @@
 						<span class="price">4000 Р.</span>
 						<p class="rating">Рейтинг:</p>
 						<a class="button button-blue" href="#">Подробнее</a>
-						<a class="button button-grey" href="#">Забронировать</a>						
+						<a class="button button-grey" href="#">Забронировать</a>
 					</li>
 					<li class="search-result-item">
 						<img class="preview" src="img/preview2.jpg" width="135" height="90" alt="Desert Quail Inn">
 						<h3>Desert Quail Inn</h3>
 						<p>Мотель от </p>
-						<span class="price">3000 Р.</span>
-						<p class="rating">Рейтинг:</p>
-						<a class="button button-blue" href="#">Подробнее</a>
-						<a class="button button-grey" href="#">Забронировать</a>		
+					<span class="price">3000 Р.</span>
+					<p class="rating">Рейтинг:</p>
+					<a class="button button-blue" href="#">Подробнее</a>
+					<a class="button button-grey" href="#">Забронировать</a>
 					</li>
 					<li>
-						<img class="preview" src="img/preview3.jpg" width="135" height="90" alt="Villas At Povo Diablo">
-						<h3>Villas At Poco Diablo</h3>
-						<p>Гостиница от </p>
-						<span class="price">4000 Р.</span>
-						<p class="rating">Рейтинг:</p>
-						<a class="button button-blue" href="#">Подробнее</a>
-						<a class="button button-grey" href="#">Забронировать</a>		
+					<img class="preview" src="img/preview3.jpg" width="135" height="90" alt="Villas At Povo Diablo">
+					<h3>Villas At Poco Diablo</h3>
+					<p>Гостиница от </p>
+					<span class="price">4000 Р.</span>
+					<p class="rating">Рейтинг:</p>
+					<a class="button button-blue" href="#">Подробнее</a>
+					<a class="button button-grey" href="#">Забронировать</a>
 					</li>
-				</ul>				
-			</section>			
+				</ul>
+			</section>
 		</main>
-		
-		
-		
+
+
+
 		<footer class="main-footer">
-			<p class="main-footer-hashtag">#VisitSedona</p>
-			<ul class="main-footer-social">
-				<li><a class="social-button" href="#">Twitter</a></li>
-				<li><a class="social-button" href="#">FaceBook</a></li>
-				<li><a class="social-button" href="#">YouTube</a></li>
-			</ul>
-			<p class="main-footer-developer">
-				Website By
-				<a class="developer-logo" href="https://htmlacademy.ru/intensive/htmlcss">html academy</a>
-			</p>			
+					<p class="main-footer-hashtag">#VisitSedona</p>
+					<ul class="main-footer-social">
+					<li><a class="social-button" href="#">Twitter</a></li>
+					<li><a class="social-button" href="#">FaceBook</a></li>
+					<li><a class="social-button" href="#">YouTube</a></li>
+					</ul>
+					<p class="main-footer-developer">
+					Website By
+					<a class="developer-logo" href="https://htmlacademy.ru/intensive/htmlcss">html academy</a>
+					</p>
 		</footer>
-		
-		
+
+
 	</body>
 </html>
