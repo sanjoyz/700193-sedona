@@ -38,7 +38,8 @@ a {
   color: #000000;
 }
 
-.site-navigation a:hover, .site-navigation a:focus {
+.site-navigation a:hover,
+.site-navigation a:focus {
   color: #81b3d2;
 }
 
@@ -64,7 +65,7 @@ li.selected a {
   background-color: #ffffff;
 }
 
-.welcome-text p {
+.welcome-text-small {
   text-align: center;
   color: #333333;
 }
@@ -153,7 +154,8 @@ p.search-date input {
   padding: 35px 140px;
 }
 
-.search-booking .button:hover, .search-booking .button:focus {
+.search-booking .button:hover,
+.search-booking .button:focus {
   background-color: #604e43;
 }
 
@@ -175,7 +177,8 @@ p.search-date input {
   padding: 17px 195px;
 }
 
-.search .button:hover, .search .button:focus {
+.search .button:hover,
+.search .button:focus {
   background-color: #669ec0;
 }
 
@@ -236,7 +239,8 @@ p.search-date input {
   background-position: center;
 }
 
-.social-button:hover, .social-button:focus {
+.social-button:hover,
+.social-button:focus {
   background-color: #669ec0;
 }
 
@@ -319,22 +323,38 @@ p.search-date input {
 
 .search-result-sort {
   list-style: none;
+  font-size: 12px;
+  line-height: 18px;
 }
 
-.search-result-sort a {
+.search-result-sort .sort-type {
   color: rgba(0, 0, 0, 0.3);
   border-bottom: dotted 1px #81b3d2;
 }
 
-.search-result-sort a:hover, .search-result-sort a:focus {
+.search-result-sort a:hover,
+.search-result-sort a:focus {
   color: #81b3d2;
 }
 
-.search-result-sort a:focus {
+.search-result-sort a:active {
   color: black;
 }
 
-li.sort-item.selected a {
+.result-item-name {
+  color: black;
+}
+
+.result-item-name:hover,
+.result-item-name:focus {
+  color: #81b3d2;
+}
+
+.result-item-name:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.selected .sort-type {
   color: #81b3d2;
   border: none;
 }
@@ -349,7 +369,8 @@ li.sort-item.selected a {
   padding: 7px 16px;
 }
 
-.search-result-list p, .search-result-list span {
+.search-result-list p,
+.search-result-list span {
   line-height: 21px;
   color: #333333;
 }
