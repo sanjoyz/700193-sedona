@@ -30,12 +30,33 @@ a {
   background-color: #ffffff;
 }
 
+.main-navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.site-logo {
+  width: 140px;
+  height: 72px;
+}
+
+.site-navigation-wrapper {
+  width: 100%;
+  margin-bottom: 60px;
+}
+
 .site-navigation {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .site-navigation a {
   color: #000000;
+  transition: 0.3s;
 }
 
 .site-navigation a:hover,
@@ -51,9 +72,25 @@ li.selected a {
   color: #766357;
 }
 
+.welcome-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.reasons-small-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
 .welcome-background {
-  height: 800px;
-  /*убрать в следующем дз*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 65px;
   background-image: url("../img/intro-background.jpg");
   background-color: #575258;
   background-position: center;
@@ -63,6 +100,7 @@ li.selected a {
 
 .welcome-text {
   background-color: #ffffff;
+  margin-bottom: 57px;
 }
 
 .welcome-text-small {
@@ -82,8 +120,31 @@ li.selected a {
   color: #333333;
 }
 
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.reasons {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
 .reasons-big {
   background-color: #81b3d2;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-bottom: 50px;
+  height: 255px;
+}
+
+.reasons-big-content {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .reasons-big-content h3 {
@@ -100,6 +161,11 @@ li.selected a {
   color: white;
 }
 
+.reasons-small {
+  width: 400px;
+  margin-bottom: 98px;
+}
+
 .reasons-small h3 {
   font-size: 21px;
   line-height: 21px;
@@ -107,7 +173,17 @@ li.selected a {
 }
 
 .advices-list {
+  display: flex;
+  justify-content: center;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 80px;
+  padding: 0;
   list-style: none;
+}
+
+.advices-list-item {
+  width: 400px;
 }
 
 .advices-list h3 {
@@ -116,14 +192,34 @@ li.selected a {
   text-align: center;
 }
 
+.search-booking-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-right: 40px;
+  margin-left: 40px;
+}
+
 .search-booking {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 576px;
+}
+.search-booking p {
+  margin-bottom: 50px;
 }
 
 .search-booking b {
   font-size: 30px;
   line-height: 36px;
   color: black;
+}
+
+.search {
+  display: flex;
+  flex-direction: column;
 }
 
 p.search-date input {
@@ -175,6 +271,8 @@ p.search-date input {
   font-weight: bold;
   font-size: 21px;
   padding: 17px 195px;
+  width: 458px;
+  margin: 0 auto;
 }
 
 .search .button:hover,
@@ -188,6 +286,16 @@ p.search-date input {
 
 .search p {
   font-weight: bold;
+}
+.map {
+  display: flex;
+  justify-content: center;
+}
+.main-footer {
+  margin-left: 40px;
+  margin-right: 40px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .main-footer a {
@@ -219,21 +327,21 @@ p.search-date input {
 }
 
 .social-tw {
-  background-image: url(../img/twitter.svg);
+  background-image: url("../img/twitter.svg");
   background-repeat: no-repeat;
   background-size: 17px 15px;
   background-position: center;
 }
 
 .social-fb {
-  background-image: url(../img/fb.svg);
+  background-image: url("../img/fb.svg");
   background-repeat: no-repeat;
   background-size: 12px 22px;
   background-position: center;
 }
 
 .social-yt {
-  background-image: url(../img/youtube.svg);
+  background-image: url("../img/youtube.svg");
   background-repeat: no-repeat;
   background-size: 20px 16px;
   background-position: center;
@@ -253,7 +361,7 @@ p.search-date input {
 }
 
 .developer-logo {
-  background-image: url(../img/html-academy.svg);
+  background-image: url("../img/html-academy.svg");
   background-repeat: no-repeat;
   background-size: 115px 41px;
   background-position: center;
@@ -299,6 +407,16 @@ p.search-date input {
 .price-form output {
   font-size: 14px;
   line-height: 21px;
+}
+
+.text-range {
+  font-size: 14px;
+  line-height: 21px;
+  border: 2px solid white;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .button-white {
@@ -373,4 +491,40 @@ p.search-date input {
 .search-result-list span {
   line-height: 21px;
   color: #333333;
+}
+
+.search-result-list .rating-text {
+  line-height: 21px;
+  color: #666666;
+}
+
+.star {
+  background-image: url("../img/star.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 18px;
+  height: 17px;
+}
+
+.arrow {
+  display: inline-block;
+  background-image: url("../img/arrow.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 11px;
+  height: 10px;
+}
+
+.arrow:hover,
+.arrow:focus {
+  background-image: url("../img/arrow-hover.svg")
+}
+
+.arrow:active {
+  background-image: url("../img/arrow-active.svg");
+}
+
+.down {
+  transform: rotate(180deg);
 }
