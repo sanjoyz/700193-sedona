@@ -74,8 +74,7 @@ a {
   transition: 0.3s;
 }
 
-.site-navigation a:hover,
-.site-navigation a:focus {
+.site-navigation a:hover, .site-navigation a:focus {
   color: #81b3d2;
 }
 
@@ -96,6 +95,7 @@ li.selected a {
 .reasons-small-wrapper {
   display: flex;
   justify-content: center;
+  background-color: #eeeeee;
 }
 
 .welcome-background {
@@ -114,6 +114,15 @@ li.selected a {
 .welcome-text {
   background-color: #ffffff;
   margin-bottom: 57px;
+}
+
+.welcome-text p {
+  margin: 0;
+  padding: 0;
+}
+
+.welcome-text .welcome-text-small {
+  padding-top: 36px;
 }
 
 .welcome-text-small {
@@ -173,19 +182,29 @@ li.selected a {
 
 .reasons-small {
   width: 33.3%;
-  padding-top: 45px;
+  padding-top: 47px;
+  padding-bottom: 60px;
 }
 
 .reasons-small h3 {
   font-size: 21px;
   line-height: 21px;
   text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.reasons-small p {
+  padding: 0;
+  margin: 0;
+  padding-top: 27px;
 }
 
 .advices-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin: 0;
   padding: 0;
   list-style: none;
 }
@@ -195,6 +214,19 @@ li.selected a {
   flex-direction: column;
   align-items: center;
   padding-top: 60px;
+  padding-bottom: 78px;
+}
+
+.advices-list-item h3 {
+  padding: 0;
+  margin: 0;
+  padding-top: 35px;
+}
+
+.advices-list-item p {
+  padding: 0;
+  margin: 0;
+  padding-top: 27px;
 }
 
 .icon {
@@ -238,10 +270,13 @@ li.selected a {
   margin-left: auto;
   margin-right: auto;
   width: 576px;
+  padding-top: 55px;
 }
 
 .search-booking p {
-  margin-bottom: 50x
+  margin: 0;
+  padding: 0;
+  padding-top: 35px;
 }
 
 .search-booking b {
@@ -280,11 +315,13 @@ p.search-date input {
 .search-booking button {
   font-weight: bold;
   font-size: 21px;
-  padding: 35px 140px;
+  width: 100%;
+  max-width: 576px;
+  padding-top: 35px;
+  padding-bottom: 35px;
 }
 
-.search-booking .button:hover,
-.search-booking .button:focus {
+.search-booking .button:hover, .search-booking .button:focus {
   background-color: #604e43;
 }
 
@@ -308,8 +345,7 @@ p.search-date input {
   margin: 0 auto;
 }
 
-.search .button:hover,
-.search .button:focus {
+.search .button:hover, .search .button:focus {
   background-color: #669ec0;
 }
 
@@ -322,17 +358,32 @@ p.search-date input {
 }
 
 .map {
-  display: flex;
-  justify-content: center;
+  overflow: hidden;
+  max-height: 594px;
 }
 
 .main-footer {
   display: flex;
   justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .main-footer a {
   color: black;
+}
+
+.main-footer-hashtag {
+  padding: 0;
+  margin: 0;
+  padding-bottom: 50px;
+  padding-top: 48px;
+}
+
+.footer-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 33.3%;
 }
 
 .main-footer-hashtag {
@@ -380,8 +431,7 @@ p.search-date input {
   background-position: center;
 }
 
-.social-button:hover,
-.social-button:focus {
+.social-button:hover, .social-button:focus {
   background-color: #669ec0;
 }
 
@@ -483,8 +533,7 @@ p.search-date input {
   border-bottom: dotted 1px #81b3d2;
 }
 
-.search-result-sort a:hover,
-.search-result-sort a:focus {
+.search-result-sort a:hover, .search-result-sort a:focus {
   color: #81b3d2;
 }
 
@@ -496,8 +545,7 @@ p.search-date input {
   color: black;
 }
 
-.result-item-name:hover,
-.result-item-name:focus {
+.result-item-name:hover, .result-item-name:focus {
   color: #81b3d2;
 }
 
@@ -520,8 +568,7 @@ p.search-date input {
   padding: 7px 16px;
 }
 
-.search-result-list p,
-.search-result-list span {
+.search-result-list p, .search-result-list span {
   line-height: 21px;
   color: #333333;
 }
@@ -549,8 +596,7 @@ p.search-date input {
   height: 10px;
 }
 
-.arrow:hover,
-.arrow:focus {
+.arrow:hover, .arrow:focus {
   background-image: url("../img/arrow-hover.svg")
 }
 
