@@ -19,6 +19,17 @@ body {
   color: #000000;
   text-transform: uppercase;
   background-color: #f2f2f2;
+  min-width: 700px;
+}
+
+.main-shadow {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  box-shadow: 0px 5px 15px 0px rgba(0, 1, 1, 0.2);
+  width: 100%;
+  max-width: 1200px;
+  /**/
 }
 
 a {
@@ -34,24 +45,28 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 40px;
-  margin-right: 40px;
 }
 
 .site-logo {
+  position: absolute;
   width: 140px;
   height: 72px;
 }
 
 .site-navigation-wrapper {
   width: 100%;
-  margin-bottom: 60px;
 }
 
 .site-navigation {
+  display: flex;
+  justify-content: space-between;
   list-style: none;
   margin: 0;
   padding: 0;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  margin-left: 73px;
+  margin-right: 73px;
 }
 
 .site-navigation a {
@@ -76,8 +91,6 @@ li.selected a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 40px;
-  margin-right: 40px;
 }
 
 .reasons-small-wrapper {
@@ -125,22 +138,19 @@ li.selected a {
   flex-direction: column;
 }
 
-.reasons {
-  margin-left: 40px;
-  margin-right: 40px;
-}
+.reasons {}
 
 .reasons-big {
   background-color: #81b3d2;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  margin-bottom: 50px;
-  height: 255px;
+  max-height: 255px;
+  overflow: hidden;
 }
 
 .reasons-big-content {
-  width: 400px;
+  width: 33.3%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -162,8 +172,8 @@ li.selected a {
 }
 
 .reasons-small {
-  width: 400px;
-  margin-bottom: 98px;
+  width: 33.3%;
+  padding-top: 45px;
 }
 
 .reasons-small h3 {
@@ -174,16 +184,40 @@ li.selected a {
 
 .advices-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  margin-left: 40px;
-  margin-right: 40px;
-  margin-bottom: 80px;
   padding: 0;
   list-style: none;
 }
 
 .advices-list-item {
-  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+}
+
+.icon {
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  width: 75px;
+  height: 77px;
+}
+
+.icon-house {
+  background-image: url("../img/icon-house.svg");
+}
+
+.icon-food {
+  background-image: url("../img/icon-food.svg");
+}
+
+.icon-gifts {
+  background-image: url("../img/icon-gifts.svg");
+}
+
+.advices-list-item {
+  width: 33.3%;
 }
 
 .advices-list h3 {
@@ -195,8 +229,6 @@ li.selected a {
 .search-booking-wrapper {
   display: flex;
   flex-direction: column;
-  margin-right: 40px;
-  margin-left: 40px;
 }
 
 .search-booking {
@@ -207,8 +239,9 @@ li.selected a {
   margin-right: auto;
   width: 576px;
 }
+
 .search-booking p {
-  margin-bottom: 50px;
+  margin-bottom: 50x
 }
 
 .search-booking b {
@@ -287,13 +320,13 @@ p.search-date input {
 .search p {
   font-weight: bold;
 }
+
 .map {
   display: flex;
   justify-content: center;
 }
+
 .main-footer {
-  margin-left: 40px;
-  margin-right: 40px;
   display: flex;
   justify-content: space-between;
 }
@@ -435,8 +468,8 @@ p.search-date input {
 }
 
 .search-result h3 {
-  font-weight: bold;
-  font-size: 21px;
+  font-weight: normal;
+  font-size: 12px;
 }
 
 .search-result-sort {
