@@ -30,6 +30,7 @@
       <div class="welcome-wrapper">
         <div class="welcome-background">
           <img src="img/welcome.png" width="459" height="353" alt="Welcome to Sedona">
+          <div class="polygon"></div>
         </div>
         <div class="welcome-text">
           <p class="text-bold">Седона - небольшой городок в Аризоне,<br> заслуживающий большего!</p>
@@ -97,6 +98,9 @@
           <b>Заинтересовались?</b>
           <p class="text-thin">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           <button class="button button-grey" type="button">Поиск гостиницы в Седоне</button>
+          <div class="map">
+            <img src="img/map.jpg" width="1280" height="747" alt="гор. Седона, Аризона 86336, США" style="position:absolute; z-index:2">
+          </div>
         </section>
 
         <form class="search" method="post" action="https://echo.htmlacademy.ru">
@@ -111,21 +115,20 @@
             <a class="calendar-icon" href="#"></a>
           </p>
           <div class="search-buttons-wrapper">
-            <label for="adults-amount">Взрослые:</label>
-            <button type="button" class="minus">-</button>
+            <label for="adults-amount" class="adults-amount-label">Взрослые:</label>
+            <button type="button" class="minus"></button>
             <input class="guests-amount" type="text" placeholder="0" id="adults-amount">
-            <button type="button" class="plus">+</button>
-            <label for="children-amount">Дети:</label>
-            <button type="button" class="minus">-</button>
+            <button type="button" class="plus"></button>
+            <label for="children-amount" class="children-amount-label">Дети:</label>
+            <button type="button" class="minus"></button>
             <input class="guests-amount" type="text" placeholder="0" id="children-amount">
-            <button type="button" class="plus">+</button>
+            <button type="button" class="plus"></button>
           </div>
           <button class="button button-blue" type="submit">Найти</button>
         </form>
+
       </div>
-      <div class="map">
-        <img src="img/map.jpg" width="1280" height="747" alt="гор. Седона, Аризона 86336, США">
-      </div>
+
     </main>
     <footer class="main-footer">
       <div class="footer-wrapper">

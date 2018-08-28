@@ -49,6 +49,7 @@ a {
 
 .site-logo {
   position: absolute;
+  z-index: 1;
   width: 140px;
   height: 72px;
 }
@@ -63,8 +64,8 @@ a {
   list-style: none;
   margin: 0;
   padding: 0;
-  padding-top: 23px;
-  padding-bottom: 23px;
+  padding-top: 16px;
+  padding-bottom: 13px;
   margin-left: 73px;
   margin-right: 73px;
 }
@@ -99,30 +100,40 @@ li.selected a {
 }
 
 .welcome-background {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 65px;
   background-image: url("../img/intro-background.jpg");
   background-color: #575258;
-  background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
+  min-height: 511px;
+}
+
+.polygon {
+  background-image: url(../img/polygon-mask.svg);
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 57px;
+  position: absolute;
+  bottom: 0px;
 }
 
 .welcome-text {
   background-color: #ffffff;
-  margin-bottom: 57px;
 }
 
 .welcome-text p {
   margin: 0;
   padding: 0;
+  padding-top: 59px;
 }
 
 .welcome-text .welcome-text-small {
-  padding-top: 36px;
+  padding-top: 28px;
+  padding-bottom: 49px;
 }
 
 .welcome-text-small {
@@ -154,7 +165,7 @@ li.selected a {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  max-height: 255px;
+  max-height: 257px;
   overflow: hidden;
 }
 
@@ -163,10 +174,12 @@ li.selected a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
 
 .reasons-big-content h3 {
+  margin: 0;
+  padding: 0;
+  padding-top: 48px;
   font-size: 21px;
   line-height: 21px;
   text-align: center;
@@ -174,6 +187,9 @@ li.selected a {
 }
 
 .reasons-big-content p {
+  margin: 0;
+  padding: 0;
+  padding-top: 23px;
   font-size: 14px;
   line-height: 21px;
   text-align: center;
@@ -182,8 +198,8 @@ li.selected a {
 
 .reasons-small {
   width: 33.3%;
-  padding-top: 47px;
-  padding-bottom: 60px;
+  padding-top: 49px;
+  padding-bottom: 57px;
 }
 
 .reasons-small h3 {
@@ -197,7 +213,7 @@ li.selected a {
 .reasons-small p {
   padding: 0;
   margin: 0;
-  padding-top: 27px;
+  padding-top: 23px;
 }
 
 .advices-list {
@@ -210,23 +226,24 @@ li.selected a {
 }
 
 .advices-list-item {
+  width: 33.3%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 60px;
+  padding-top: 54px;
   padding-bottom: 78px;
 }
 
 .advices-list-item h3 {
   padding: 0;
   margin: 0;
-  padding-top: 35px;
+  padding-top: 29px;
 }
 
 .advices-list-item p {
   padding: 0;
   margin: 0;
-  padding-top: 27px;
+  padding-top: 24px;
 }
 
 .icon {
@@ -248,10 +265,6 @@ li.selected a {
   background-image: url("../img/icon-gifts.svg");
 }
 
-.advices-list-item {
-  width: 33.3%;
-}
-
 .advices-list h3 {
   font-size: 21px;
   line-height: 21px;
@@ -271,12 +284,14 @@ li.selected a {
   margin-right: auto;
   width: 576px;
   padding-top: 55px;
+  margin-bottom: 54px;
 }
 
 .search-booking p {
   margin: 0;
   padding: 0;
-  padding-top: 35px;
+  padding-top: 27px;
+  padding-bottom: 49px;
 }
 
 .search-booking b {
@@ -285,15 +300,68 @@ li.selected a {
   color: black;
 }
 
-.search {
-  display: flex;
-  flex-direction: column;
+.search-booking button {
+  font-weight: bold;
+  font-size: 21px;
+  width: 100%;
+  max-width: 576px;
+  padding-top: 31px;
+  padding-bottom: 29px;
+}
+
+.search-booking .button:hover, .search-booking .button:focus {
+  background-color: #604e43;
+}
+
+.search-booking .button:active {
+  background-color: #503e33;
 }
 
 p.search-date input {
   text-transform: uppercase;
   border: none;
   font-weight: bold;
+  background-color: #f2f2f2;
+  line-height: 26px;
+  padding-left: 14px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-left: 21px;
+  margin-bottom: 30px;
+  width: 345px;
+}
+
+.search-buttons-wrapper button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+}
+
+.adults-amount {
+  margin-left: 20px;
+}
+
+button.minus {
+  background-image: url("../img/minus.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f2f2f2;
+  height: 11px;
+  width: 12px;
+  top: 33%;
+  transform: translate(10px);
+}
+
+button.plus {
+  background-image: url("../img/plus.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f2f2f2;
+  height: 11px;
+  width: 21px;
+  top: 33%;
+  transform: translate(-30px);
 }
 
 .button {
@@ -312,37 +380,39 @@ p.search-date input {
   background-color: #81b3d2;
 }
 
-.search-booking button {
-  font-weight: bold;
-  font-size: 21px;
-  width: 100%;
-  max-width: 576px;
-  padding-top: 35px;
-  padding-bottom: 35px;
-}
-
-.search-booking .button:hover, .search-booking .button:focus {
-  background-color: #604e43;
-}
-
-.search-booking .button:active {
-  background-color: #503e33;
-}
-
 .guests-amount {
+  padding-top:5px;
+  width: 113px;
   border: none;
+  font-weight: bold;
+  color: black;
+  line-height: 26px;
+  font-size: 14px;
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+.search-buttons-wrapper {
+  font-weight: bold;
+  line-height: 26px;
+  position: relative;
 }
 
 .search {
   text-align: center;
+  min-width: 576px;
+  margin: 0 auto;
 }
 
 .search .button {
   font-weight: bold;
   font-size: 21px;
-  padding: 17px 195px;
-  width: 458px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  width: 83%;
   margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .search .button:hover, .search .button:focus {
@@ -355,11 +425,25 @@ p.search-date input {
 
 .search p {
   font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+.children-amount-label {
+  margin-left: 50px;
+  margin-right: 23px;
+}
+.adults-amount-label {
+  margin-right: 54px;
 }
 
 .map {
+  z-index: 1;
+  position: relative;
   overflow: hidden;
   max-height: 594px;
+  min-width: 700px;
+  width: 1200px;
+
 }
 
 .main-footer {
