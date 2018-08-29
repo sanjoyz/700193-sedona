@@ -45,7 +45,9 @@
               <p> - №1 - </p>
               <p>Седона - не аттракцион для туристов,<br> там течёт своя жизнь</p>
             </div>
-            <img src="img/reason-img1.jpg" width="800" height="401" alt="Фотография города">
+            <div class="reasons-img-wrapper">
+              <img src="img/reason-img1.jpg" width="800" height="401" alt="Фотография города">
+            </div>
           </div>
           <ul class="advices-list">
             <li class="advices-list-item">
@@ -65,7 +67,9 @@
             </li>
           </ul>
           <div class="reasons-big">
-            <img src="img/reason-img2.jpg" width="800" height="401" alt="Фотография города">
+            <div class="reasons-img-wrapper">
+              <img src="img/reason-img2.jpg" width="800" height="401" alt="Фотография города">
+            </div>
             <div class="reasons-big-content">
               <h3>Там есть <br>мост дьявола</h3>
               <p> - №2 - </p>
@@ -106,13 +110,13 @@
         <form class="search" method="post" action="https://echo.htmlacademy.ru">
           <p class="search-date">
             <label for="arrival-date">Дата заезда: </label>
-            <input id="arrival-date" type="text" value="24 апреля 2017" name="arrival-date" placeholder="Выберите дату заезда">
-            <a class="calendar-icon" href="#"></a>
+              <input id="arrival-date" type="text" value="24 апреля 2017" name="arrival-date" placeholder="Выберите дату заезда">
+              <a class="calendar-icon" href="#"></a>            
           </p>
           <p class="search-date">
             <label for="departure-date">Дата выезда: </label>
             <input id="departure-date" type="text" value="4 июля 2017" name="departure-date" placeholder="Выберите дату отъезда">
-            <a class="calendar-icon" href="#"></a>
+            <a class="calendar-icon" href="#">Открыть календарь</a>
           </p>
           <div class="search-buttons-wrapper">
             <label for="adults-amount" class="adults-amount-label">Взрослые:</label>

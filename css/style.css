@@ -22,6 +22,7 @@ body {
   min-width: 700px;
 }
 
+
 .main-shadow {
   margin-left: auto;
   margin-right: auto;
@@ -60,17 +61,31 @@ a {
 
 .site-navigation {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   list-style: none;
-  margin: 0;
+  max-width: 1056px;
   padding: 0;
-  padding-top: 16px;
+  margin: 0 auto;
+  padding-top: 15px;
   padding-bottom: 13px;
-  margin-left: 73px;
-  margin-right: 73px;
+  margin-left: 78px;
+  margin-right: 78px;
+}
+
+.site-navigation li {
+  width: 25%;
+}
+
+.site-navigation li:nth-child(1), .site-navigation li:nth-child(2) {
+  text-align: left;
+}
+
+.site-navigation li:nth-child(3), .site-navigation li:nth-child(4) {
+  text-align: right;
 }
 
 .site-navigation a {
+  vertical-align: middle;
   color: #000000;
   transition: 0.3s;
 }
@@ -96,6 +111,7 @@ li.selected a {
 .reasons-small-wrapper {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   background-color: #eeeeee;
 }
 
@@ -115,10 +131,11 @@ li.selected a {
 .polygon {
   background-image: url(../img/polygon-mask.svg);
   background-repeat: no-repeat;
+  background-position: bottom;
   width: 100%;
   min-height: 57px;
   position: absolute;
-  bottom: 0px;
+  bottom: -2px;
 }
 
 .welcome-text {
@@ -158,15 +175,17 @@ li.selected a {
   flex-direction: column;
 }
 
-.reasons {}
+.reasons-img-wrapper {
+  width: 66.6%;
+  overflow: hidden;
+  max-height: 257px;
+}
 
 .reasons-big {
   background-color: #81b3d2;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  max-height: 257px;
-  overflow: hidden;
 }
 
 .reasons-big-content {
@@ -174,12 +193,14 @@ li.selected a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 48px;
+  padding-bottom: 39px;
+  /*39 58*/
 }
 
 .reasons-big-content h3 {
   margin: 0;
   padding: 0;
-  padding-top: 48px;
   font-size: 21px;
   line-height: 21px;
   text-align: center;
@@ -282,9 +303,9 @@ li.selected a {
   align-items: center;
   margin-left: auto;
   margin-right: auto;
-  width: 576px;
   padding-top: 55px;
   margin-bottom: 54px;
+  width: 100%;
 }
 
 .search-booking p {
@@ -331,15 +352,27 @@ p.search-date input {
   width: 345px;
 }
 
+p.search-date {
+  position: relative;
+}
+
+.calendar-icon {
+  background-image: url(../img/calendar.svg);
+  background-repeat: no-repeat;
+  font-size: 0;
+  display: inline-block;
+  width: 21px;
+  height: 22px;
+  position: absolute;
+  right: 67px;
+  bottom: 39px;
+}
+
 .search-buttons-wrapper button {
   border: none;
   margin: 0;
   padding: 0;
   position: absolute;
-}
-
-.adults-amount {
-  margin-left: 20px;
 }
 
 button.minus {
@@ -381,7 +414,7 @@ button.plus {
 }
 
 .guests-amount {
-  padding-top:5px;
+  padding-top: 5px;
   width: 113px;
   border: none;
   font-weight: bold;
@@ -428,12 +461,14 @@ button.plus {
   margin: 0;
   padding: 0;
 }
+
 .children-amount-label {
   margin-left: 50px;
-  margin-right: 23px;
+  margin-right: 38px;
 }
+
 .adults-amount-label {
-  margin-right: 54px;
+  margin-right: 40px;
 }
 
 .map {
@@ -441,9 +476,7 @@ button.plus {
   position: relative;
   overflow: hidden;
   max-height: 594px;
-  min-width: 700px;
-  width: 1200px;
-
+  width: 100%;
 }
 
 .main-footer {
