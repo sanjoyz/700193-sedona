@@ -302,6 +302,7 @@ li.selected a {
 .search-booking-wrapper {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .search-booking {
@@ -439,9 +440,16 @@ button.plus {
 }
 
 .search {
+  position: absolute;
   text-align: center;
   min-width: 576px;
   margin: 0 auto;
+  top: 295px;
+  left: 50%;
+  transform:translate(-50%);
+  margin-left: auto;
+  z-index: 1;
+  background-color: #ffffff;
 }
 
 .search .button {
@@ -641,10 +649,17 @@ button.plus {
   font-weight: bold;
 }
 
-.search-result-wrapper {
-  display: flex;
-  justify-content: space-between;
+.OLOLOL {
+  margin-left: auto;
+  outline: 1px dotted green;
 
+}
+
+.search-result-count-wrapper {
+  outline: 1px solid red;
+  justify-content: flex-start;
+  display: flex;
+  align-items: baseline;
 }
 
 .search-result h3 {
