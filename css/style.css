@@ -469,7 +469,7 @@ button.plus {
   left: 50%;
   transform: translate(-50%);
   margin-left: auto;
-  z-index: 2;
+  display: none;
   background-color: #ffffff;
 }
 
