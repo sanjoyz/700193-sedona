@@ -35,7 +35,7 @@
             <ul class="filter-list">
               <li class="filter-list-item">
                 <label class="filter-list-checkbox" for="filter-swimmingpool">
-                <input class="visually-hidden filter-input-check" type="checkbox" id="filter-swimmingpool" name="swimmingpool">
+                <input class="visually-hidden filter-input-check" type="checkbox" checked id="filter-swimmingpool" name="swimmingpool">
                 <span class="checkbox-indicator"></span>
                 Бассейн
                 </label>
@@ -62,7 +62,7 @@
 
               <li class="filter-list-item">
                 <label class="filter-list-checkbox" for="filter-hotel">
-                <input class="visually-hidden filter-input-check" type="checkbox" id="filter-hotel" name="hotel">
+                <input class="visually-hidden filter-input-check" type="checkbox" checked id="filter-hotel" name="hotel">
                 <span class="checkbox-indicator"></span>
                 Гостиница
                 </label>
@@ -70,7 +70,7 @@
 
               <li class="filter-list-item">
                 <label class="filter-list-checkbox" for="filter-motel">
-                <input class="visually-hidden filter-input-check" type="checkbox" id="filter-motel" name="motel">
+                <input class="visually-hidden filter-input-check" type="checkbox" checked id="filter-motel" name="motel">
                 <span class="checkbox-indicator"></span>
                 Мотель
                 </label>
@@ -78,7 +78,7 @@
 
               <li class="filter-list-item">
                 <label class="filter-list-checkbox" for="filter-apparts">
-                <input class="visually-hidden filter-input-check" type="checkbox" id="filter-apparts" name="apparts">
+                <input class="visually-hidden filter-input-check" type="checkbox" checked id="filter-apparts" name="apparts">
                 <span class="checkbox-indicator"></span>
                 Апартаменты
                 </label>
@@ -87,11 +87,15 @@
           </fieldset>
 
           <div class="price-form">
-            <h3>Стоимость в сутки (р):</h3>            
-            <input type="text" class="text-range" value="от 0">
-            <input type="text" class="text-range" value="до 3000">
-            <button class="range-button" type="button"></button>
-            <button class="range-button" type="button"></button>
+            <h3>Стоимость в сутки (р):</h3>
+            <div class="price-form-input">
+              <input type="text" class="text-range" value="от 0">
+              <input type="text" class="text-range" value="до 3000">
+            </div>
+            <div class="range-wrapper">
+              <button class="range-button min" type="button"></button>
+              <button class="range-button max" type="button"></button>
+            </div>
             <button class="button-white" type="submit">Показать</button>
           </div>
         </form>
@@ -115,8 +119,8 @@
           </ul>
 
           <div class="arrows-wrapper">
-            <div class="arrow up"></div>
-            <div class="arrow down active"></div>
+            <a class="arrow up">Отсортировать по возрастанию</a>
+            <a class="arrow down active">Отсортировать по убыванию</a>
           </div>
         </div>
         <ul class="search-result-list">
