@@ -524,7 +524,6 @@ button.plus {
 
 .map {
   z-index: 0;
-  position: absolute;
   overflow: hidden;
   max-height: 594px;
   width: 100%;
@@ -535,8 +534,7 @@ button.plus {
   display: flex;
   justify-content: space-between;
   background-color: rgba(255, 255, 255, 0.9);
-  z-index: 1;
-  top: 415px;
+  z-index: 1;  
   position: relative;
 }
 
