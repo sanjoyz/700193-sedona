@@ -318,7 +318,6 @@ li.selected a {
   margin-left: auto;
   margin-right: auto;
   padding-top: 55px;
-  margin-bottom: 54px;
   width: 100%;
 }
 
@@ -564,6 +563,8 @@ button.plus {
   position: absolute;
   width: 100%;
   bottom: 0px;
+  padding-bottom: 38px;
+  padding-top: 31px;
 }
 
 .main-footer a {
@@ -644,7 +645,6 @@ button.plus {
   display: flex;
   align-items: center;
   margin: 0;
-
 }
 
 .main-footer-developer:hover .developer-logo, .main-footer-developer:focus .developer-logo {
@@ -736,6 +736,8 @@ button.plus {
   color: white;
   padding-bottom: 20px;
 }
+
+.search-result-item span.price:nth-child(1) {}
 
 .price-form {
   margin-left: auto;
@@ -914,7 +916,7 @@ button.plus {
   list-style: none;
   margin: 0;
   padding: 0;
-  padding-bottom:124px;
+  padding-bottom: 124px;
 }
 
 .search-result-list .button {
@@ -936,17 +938,19 @@ button.plus {
 
 .search-result-item {
   padding-top: 28px;
-  padding-bottom:32px;
+  padding-bottom: 32px;
   padding-left: 6%;
   padding-right: 6%;
   margin-top: 10px;
   border-bottom: 1px solid #e5e5e5;
   display: flex;
 }
+
 .search-result-item:nth-child(2) {
   padding-bottom: 29px;
   padding-top: 16px;
 }
+
 .search-result-item:nth-child(3) {
   padding-top: 17px;
 }
@@ -998,6 +1002,7 @@ button.plus {
 
 .rating {
   margin-left: auto;
+  text-align: right;
 }
 
 .rating p {
