@@ -553,6 +553,7 @@ button.plus {
   overflow: hidden;
   max-height: 594px;
   width: 100%;
+  position: relative;
 }
 
 .main-footer {
