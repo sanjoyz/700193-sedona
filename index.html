@@ -107,23 +107,23 @@
             <form class="search search-modal" method="post" action="https://echo.htmlacademy.ru">
               <p class="search-date">
                 <label for="arrival-date">Дата заезда: </label>
-                <input id="arrival-date" type="text" value="24 апреля 2017" name="arrival-date" placeholder="Выберите дату заезда">
+                <input class="date-input" id="arrival-date" type="text" value="24 апреля 2017" name="arrival-date" placeholder="Выберите дату заезда">
                 <a class="calendar-icon" href="#"></a>
               </p>
               <p class="search-date">
                 <label for="departure-date">Дата выезда: </label>
-                <input id="departure-date" type="text" value="4 июля 2017" name="departure-date" placeholder="Выберите дату отъезда">
+                <input class="date-input" id="departure-date" type="text" value="4 июля 2017" name="departure-date" placeholder="Выберите дату отъезда">
                 <a class="calendar-icon" href="#">Открыть календарь</a>
               </p>
               <div class="search-buttons-wrapper">
                 <label for="adults-amount" class="adults-amount-label">Взрослые:</label>
-                <button type="button" class="minus"></button>
+                <button type="button" class="minus">-</button>
                 <input class="guests-amount" type="text" placeholder="2" id="adults-amount">
-                <button type="button" class="plus"></button>
+                <button type="button" class="plus">+</button>
                 <label for="children-amount" class="children-amount-label">Дети:</label>
-                <button type="button" class="minus"></button>
+                <button type="button" class="minus">-</button>
                 <input class="guests-amount" type="text" placeholder="0" id="children-amount">
-                <button type="button" class="plus"></button>
+                <button type="button" class="plus">+</button>
               </div>
               <button class="button button-blue" type="submit">Найти</button>
             </form>

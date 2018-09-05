@@ -8,13 +8,13 @@ viewBox="0 0 47 47"
  <defs>
   <style type="text/css">
    <![CDATA[
-    .fil0 {fill:white}
+    .fil0 {fill:#6A6A6A}
    ]]>
   </style>
  </defs>
  <g id="Слой_x0020_1">
   <metadata id="CorelCorpID_0Corel-Layer"/>
-  <g id="_2363653429728">
+  <g id="_2363651186800">
    <g>
     <path class="fil0" d="M41 4c1,0 2,1 2,2l0 35c0,1 -1,2 -2,2l-35 0c-1,0 -2,-1 -2,-2l0 -35c0,-1 1,-2 2,-2l35 0 0 0zm0 -4l-35 0c-3,0 -6,3 -6,6l0 35c0,3 3,6 6,6l35 0c3,0 6,-3 6,-6l0 -35c0,-3 -3,-6 -6,-6l0 0z"/>
    </g>
