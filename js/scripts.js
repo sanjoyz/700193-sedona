@@ -37,4 +37,4 @@ form.addEventListener("submit", function(evt) {
       localStorage.setItem("children", children.value);
     }
   }
-})
+});

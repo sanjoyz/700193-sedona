@@ -69,6 +69,8 @@ a {
   width: 140px;
   height: 72px;
   left: 50%;
+  -webkit-transform: translate(-50%);
+  -ms-transform: translate(-50%);
   transform: translate(-50%);
 }
 
@@ -96,8 +98,7 @@ a {
   width: 20%;
 }
 
-.site-navigation li:nth-child(1),
-.site-navigation li:nth-child(2) {
+.site-navigation li:nth-child(1), .site-navigation li:nth-child(2) {
   text-align: left;
 }
 
@@ -113,8 +114,7 @@ a {
   margin-left: 32px;
 }
 
-.site-navigation li:nth-child(3),
-.site-navigation li:nth-child(4) {
+.site-navigation li:nth-child(3), .site-navigation li:nth-child(4) {
   text-align: right;
 }
 
@@ -126,8 +126,7 @@ a {
   transition: 0.3s;
 }
 
-.site-navigation a:hover,
-.site-navigation a:focus {
+.site-navigation a:hover, .site-navigation a:focus {
   color: #81b3d2;
 }
 
@@ -179,7 +178,7 @@ li.selected a {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-image: url("../img/intro-background.jpg");
+  background-image: url("../img/intro-background-small.jpg");
   background-color: #575258;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -450,8 +449,7 @@ li.selected a {
   padding-bottom: 29px;
 }
 
-.search-booking .button:hover,
-.search-booking .button:focus {
+.search-booking .button:hover, .search-booking .button:focus {
   background-color: #604e43;
 }
 
@@ -485,10 +483,9 @@ p.search-date {
 }
 
 .calendar-icon {
-  background-image: url("../img/calendar.svg");
-  background-repeat: no-repeat;
   font-size: 0;
   display: inline-block;
+  vertical-align: middle;
   width: 21px;
   height: 22px;
   position: absolute;
@@ -496,12 +493,16 @@ p.search-date {
   bottom: 32px;
 }
 
-.calendar-icon:hover {
-  background-image: url("../img/calendar-hover.svg");
+.calendar-icon svg {
+  color: #cacaca;
 }
 
-.calendar-icon:active {
-  background-image: url("../img/calendar-click.svg");
+.calendar-icon:hover svg, .calendar-icon:focus svg {
+  color: black;
+}
+
+.calendar-icon:active svg {
+  color: #81b3d2;
 }
 
 .search-buttons-wrapper button {
@@ -511,8 +512,7 @@ p.search-date {
   position: absolute;
 }
 
-.search-buttons-wrapper button:hover,
-.search-buttons-wrapper button:focus {
+.search-buttons-wrapper button:hover, .search-buttons-wrapper button:focus {
   color: black;
 }
 
@@ -536,6 +536,8 @@ button.plus {
   max-width: 12px;
   color: #a9a9a9;
   background-color: #f2f2f2;
+  -webkit-transform: translate(-28px);
+  -ms-transform: translate(-28px);
   transform: translate(-28px);
   padding-top: 3px;
   font-size: 28px;
@@ -635,46 +637,30 @@ button.plus {
 }
 
 @-webkit-keyframes shake {
-  0%,
-  100% {
+  0%, 100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
-  10%,
-  30%,
-  50%,
-  70%,
-  90% {
+  10%, 30%, 50%, 70%, 90% {
     -webkit-transform: translateY(-20px);
     transform: translateY(-20px);
   }
-  20%,
-  40%,
-  60%,
-  80% {
+  20%, 40%, 60%, 80% {
     -webkit-transform: translateY(-5px);
     transform: translateY(-5px);
   }
 }
 
 @keyframes shake {
-  0%,
-  100% {
+  0%, 100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
-  10%,
-  30%,
-  50%,
-  70%,
-  90% {
+  10%, 30%, 50%, 70%, 90% {
     -webkit-transform: translateY(-20px);
     transform: translateY(-20px);
   }
-  20%,
-  40%,
-  60%,
-  80% {
+  20%, 40%, 60%, 80% {
     -webkit-transform: translateY(-5px);
     transform: translateY(-5px);
   }
@@ -691,8 +677,7 @@ button.plus {
   margin-bottom: 55px;
 }
 
-.search .button:hover,
-.search .button:focus {
+.search .button:hover, .search .button:focus {
   background-color: #669ec0;
 }
 
@@ -784,11 +769,13 @@ button.plus {
 
 .main-footer-social li {
   display: inline-block;
+  vertical-align: middle;
 }
 
 .social-button {
   font-size: 0px;
   display: inline-block;
+  vertical-align: middle;
   background-color: #81b3d2;
   background-size: cover;
   width: 46px;
@@ -816,8 +803,7 @@ button.plus {
   background-position: center;
 }
 
-.social-button:hover,
-.social-button:focus {
+.social-button:hover, .social-button:focus {
   background-color: #669ec0;
 }
 
@@ -847,25 +833,25 @@ button.plus {
   margin: 0;
 }
 
-.main-footer-developer:hover .developer-logo,
-.main-footer-developer:focus .developer-logo {
-  background-image: url("../img/html-academy-hover.svg");
+.main-footer-developer:hover svg, .main-footer-developer:focus svg {
+  color: #81b3d2;
 }
 
-.main-footer-developer:active .developer-logo {
-  background-image: url("../img/html-academy-active.svg");
+.main-footer-developer:active svg {
+  color: #bdbbbc;
 }
 
 .developer-logo {
-  background-image: url("../img/html-academy.svg");
+  /*background-image: url("../img/html-academy.svg");
   background-repeat: no-repeat;
   background-size: 115px 41px;
-  background-position: center;
+  background-position: center;*/
   font-size: 0px;
   width: 115px;
   height: 41px;
   margin-left: 10px;
   display: inline-block;
+  vertical-align: middle;
 }
 
 /*inner page*/
@@ -909,7 +895,11 @@ button.plus {
 }
 
 .filter-list-checkbox input[type="checkbox"]:disabled+.checkbox-indicator {
-  background-image: url("../img/checkbox-checked-disabled.svg");
+  background-image: url("../img/checkbox-disabled.svg");
+}
+
+.filter-list-checkbox input[type="checkbox"]:disabled:checked+.checkbox-indicator {
+  background-image: url("../img/checkbox-checked-disabled")
 }
 
 .filter-form {
@@ -997,6 +987,24 @@ button.plus {
   min-height: 25px;
 }
 
+.range-wrapper::before {
+  content: "";
+  height: 2px;
+  width: 255px;
+  background-color: white;
+  position: absolute;
+  top: 21px;
+}
+
+.range-wrapper::after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+  position: absolute;
+  top: 21px;
+}
+
 .range-button {
   background-image: url("../img/filter-button.svg");
   background-color: transparent;
@@ -1006,33 +1014,13 @@ button.plus {
   position: absolute;
   top: 12px;
   z-index: 2;
+  cursor: pointer;
 }
 
-.range-button.min {}
-
-.range-button.min::after {
-  content: "";
-  height: 2px;
-  min-width: 243px;
-  max-width: 248px;
-  background-color: white;
-  position: absolute;
-  left: 11px;
-  -webkit-transform: translate(0, -50%);
-  -ms-transform: translate(0, -50%);
-  transform: translate(0, -50%);
-}
-
-.range-button.max::after {
-  content: "";
-  height: 2px;
-  width: 45px;
-  background-color: rgba(255, 255, 255, 0.3);
-  position: absolute;
-  -webkit-transform: translate(0, -50%);
-  -ms-transform: translate(0, -50%);
-  transform: translate(0, -50%);
-  left: 20px;
+.range-button:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .range-button.max {
@@ -1053,8 +1041,7 @@ button.plus {
   border-radius: 2px;
 }
 
-.button-white:hover,
-.button-white:focus {
+.button-white:hover, .button-white:focus {
   color: black;
   background-color: white;
 }
@@ -1119,8 +1106,7 @@ button.plus {
   border-bottom: dotted 1px #81b3d2;
 }
 
-.search-result-sort a:hover,
-.search-result-sort a:focus {
+.search-result-sort a:hover, .search-result-sort a:focus {
   color: #81b3d2;
 }
 
@@ -1133,8 +1119,7 @@ button.plus {
   color: black;
 }
 
-.result-item-name:hover,
-.result-item-name:focus {
+.result-item-name:hover, .result-item-name:focus {
   color: #81b3d2;
 }
 
@@ -1160,8 +1145,7 @@ button.plus {
   padding: 4px 16px;
 }
 
-.search-result-list p,
-.search-result-list span {
+.search-result-list p, .search-result-list span {
   line-height: 21px;
   color: #333333;
 }
@@ -1202,9 +1186,7 @@ button.plus {
   border-bottom: 1px solid #e5e5e5;
 }
 
-.search-result-item p,
-.search-result-item span,
-.search-result-item h3 {
+.search-result-item p, .search-result-item span, .search-result-item h3 {
   margin: 0;
   padding: 0;
 }
@@ -1226,8 +1208,7 @@ button.plus {
   padding-bottom: 13px;
 }
 
-.search-item-wrapper .button-blue:hover,
-.search-item-wrapper .button-blue:focus {
+.search-item-wrapper .button-blue:hover, .search-item-wrapper .button-blue:focus {
   background-color: #669ec0;
 }
 
@@ -1245,8 +1226,7 @@ button.plus {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.search-item-wrapper .button-grey:hover,
-.search-item-wrapper .button-grey:focus {
+.search-item-wrapper .button-grey:hover, .search-item-wrapper .button-grey:focus {
   background-color: #604e43;
 }
 
@@ -1265,6 +1245,7 @@ button.plus {
   background-position: center;
   background-repeat: no-repeat;
   display: inline-block;
+  vertical-align: top;
   width: 18px;
   height: 17px;
 }
@@ -1275,6 +1256,7 @@ button.plus {
   background-position: center;
   background-repeat: no-repeat;
   background-color: white;
+  vertical-align: middle;
   width: 11px;
   height: 10px;
   font-size: 0px;
@@ -1286,8 +1268,7 @@ button.plus {
   background-image: url("../img/arrow-active.svg");
 }
 
-.arrow:hover,
-.arrow:focus {
+.arrow:hover, .arrow:focus {
   background-image: url("../img/arrow-hover.svg")
 }
 
@@ -1319,4 +1300,5 @@ button.plus {
 .item-name-type {
   min-width: 112px;
   display: inline-block;
+  vertical-align: middle;
 }
