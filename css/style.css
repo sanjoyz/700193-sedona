@@ -440,7 +440,8 @@ li.selected a {
   color: black;
 }
 
-.search-booking button {
+a.hotel-button  {
+  display: inline-block;
   font-weight: bold;
   font-size: 21px;
   width: 100%;
@@ -899,7 +900,7 @@ button.plus {
 }
 
 .filter-list-checkbox input[type="checkbox"]:disabled:checked+.checkbox-indicator {
-  background-image: url("../img/checkbox-checked-disabled")
+  background-image: url("../img/checkbox-checked-disabled.svg")
 }
 
 .filter-form {
@@ -1015,6 +1016,9 @@ button.plus {
   top: 12px;
   z-index: 2;
   cursor: pointer;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .range-button:hover {
@@ -1050,10 +1054,14 @@ button.plus {
   font-size: 21px;
   font-weight: bold;
   margin-right: 48px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 .arrows-wrapper {
   margin-left: auto;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 .search-result-count-wrapper {
