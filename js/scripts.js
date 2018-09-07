@@ -18,7 +18,7 @@ try {
 
 b.addEventListener("click", function(evt) {
   evt.preventDefault();
-  modal.classList.toggle("modal-hide");
+  modal.classList.toggle("search-on");
   modal.classList.remove("modal-error");
   if (storage) {
     adults.value = storage;
