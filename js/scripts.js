@@ -15,7 +15,7 @@ try {
 } catch (err) {
   isStorageSupport = false;
 }
-
+form.classList.remove("no-js");
 b.addEventListener("click", function(evt) {
   evt.preventDefault();
   modal.classList.toggle("search-on");
