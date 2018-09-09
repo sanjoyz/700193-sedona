@@ -2,6 +2,7 @@
   font-family: "PT Sans";
   src: url("../fonts/ptsans.woff") format("woff"), url("../fonts/ptsans.woff2") format("woff2");
 }
+
 @font-face {
   font-family: "PT Sans";
   src: url("../fonts/ptsansbold.woff") format("woff"), url("../fonts/ptsansbold.woff2") format("woff2");
@@ -180,6 +181,7 @@ li.selected a {
   background-position-y: 30%;
   min-height: 507px;
 }
+
 .welcome-background::before {
   content: "";
   background-image: url("../img/polygon-mask.svg");
@@ -190,8 +192,8 @@ li.selected a {
   position: absolute;
   bottom: -2px;
   left: 0;
-
 }
+
 .welcome-text {
   background-color: #ffffff;
 }
@@ -245,6 +247,7 @@ li.selected a {
   display: flex;
   align-items: center;
 }
+
 /*.reasons-img-wrapper img {
   width: 100%;
 }*/
@@ -305,7 +308,7 @@ li.selected a {
 
 .reasons-small {
   width: 33.3%;
-  padding-top: 49px;
+  padding-top: 46px;
   padding-bottom: 57px;
 }
 
@@ -372,23 +375,28 @@ li.selected a {
   padding-top: 24px;
 }
 
-.icon {
-  background-repeat: no-repeat;
-  background-position: bottom center;
+.house::before {
+  content: url("../img/icon-house.svg");
   width: 75px;
   height: 77px;
+  display: block;
+  margin-bottom: 22px;
+  margin-top: -22px;
 }
-
-.icon-house {
-  background-image: url("../img/icon-house.svg");
+.food::before {
+  content: url("../img/icon-food.svg");
+  width: 75px;
+  height: 77px;
+  display: block;
+  margin-top: -21px;
+  margin-bottom: 21px;
 }
-
-.icon-food {
-  background-image: url("../img/icon-food.svg");
-}
-
-.icon-gifts {
-  background-image: url("../img/icon-gifts.svg");
+.gifts::before {
+  content: url("../img/icon-gifts.svg");
+  height: 77px;
+  display: block;
+  margin-top: -26px;
+  margin-bottom: 26px;
 }
 
 .advices-list h3 {
@@ -421,7 +429,7 @@ li.selected a {
   align-items: center;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 55px;
+  padding-top: 52px;
   width: 100%;
 }
 
@@ -431,7 +439,7 @@ li.selected a {
 
 .search-booking p {
   margin: 0;
-  padding: 22px 0 42px;
+  padding: 22px 0 48px;
   line-height: 24px;
 }
 
@@ -468,12 +476,11 @@ p.search-date input {
   line-height: 26px;
   padding: 0;
   margin: 0;
-  padding-left: 9px;
+  padding-left: 10px;
   padding-top: 6px;
-  padding-bottom: 4px;
-  margin-left: 17px;
-  margin-bottom: 24px;
-  width: 336px;
+  padding-bottom: 6px;
+  margin-bottom: 16px;
+  min-width: 336px;
 }
 
 p.search-date {
@@ -482,7 +489,11 @@ p.search-date {
 }
 
 .search-date:nth-child(1) {
-  padding-top: 55px;
+  margin-top: 48px;
+}
+p.search-date label {
+  max-width: 95px;
+  padding-top: 6px;
 }
 
 .calendar-icon {
@@ -492,8 +503,9 @@ p.search-date {
   width: 21px;
   height: 22px;
   position: absolute;
-  right: 63px;
-  bottom: 32px;
+  right: 9px;
+  top: 50%;
+  transform: translate(0,-85%);
 }
 
 .calendar-icon svg {
@@ -570,7 +582,7 @@ button.plus {
 }
 
 .modal-wrapper .button-grey {
-  min-width: 567px;
+  min-width: 568px;
 }
 
 .guests-amount {
@@ -618,24 +630,24 @@ button.plus {
   -webkit-animation: shake 0.8s;
   animation: shake 0.8s;
 }
+
 @-webkit-keyframes modal-animation {
   0% {
     opacity: 1;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
   }
-
   100% {
     opacity: 1;
   }
 }
+
 @keyframes modal-animation {
   0% {
     opacity: 0;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
   }
-
   100% {
     opacity: 1;
   }
@@ -644,13 +656,13 @@ button.plus {
 .map iframe {
   width: 100%;
 }
+
 @-webkit-keyframes shake {
   0%,
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
-
   10%,
   30%,
   50%,
@@ -659,7 +671,6 @@ button.plus {
     -webkit-transform: translateY(-20px);
     transform: translateY(-20px);
   }
-
   20%,
   40%,
   60%,
@@ -668,13 +679,13 @@ button.plus {
     transform: translateY(-5px);
   }
 }
+
 @keyframes shake {
   0%,
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
-
   10%,
   30%,
   50%,
@@ -683,7 +694,6 @@ button.plus {
     -webkit-transform: translateY(-20px);
     transform: translateY(-20px);
   }
-
   20%,
   40%,
   60%,
@@ -697,9 +707,9 @@ button.plus {
   font-weight: bold;
   font-size: 21px;
   padding-top: 16px;
-  padding-bottom: 14px;
-  width: 80%;
-  margin: 56px auto 55px;
+  padding-bottom: 16px;
+  width: 81%;
+  margin: 54px auto 55px;
 }
 
 .search .button:focus,
@@ -715,17 +725,21 @@ button.plus {
 .search p {
   font-weight: bold;
   margin: 0;
-  padding: 7px 0 0 5px;
+  padding: 7px 0px;
   line-height: 26px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 55px;
+  margin-right: 55px;
 }
 
 .children-amount-label {
-  margin-left: 48px;
+  margin-left: 51px;
   margin-right: 24px;
 }
 
 .adults-amount-label {
-  margin-right: 40px;
+  margin-right: 38px;
   margin-left: 39px;
 }
 
@@ -876,6 +890,7 @@ button.plus {
   display: inline-block;
   vertical-align: middle;
 }
+
 /*inner page*/
 
 .filter {
@@ -1242,7 +1257,8 @@ button.plus {
 .search-item-wrapper .button-blue:hover {
   background-color: #669ec0;
 }
-{
+
+  {
   background-color: #669ec0;
 }
 
