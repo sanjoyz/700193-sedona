@@ -253,7 +253,6 @@ li.selected a {
 /*.reasons-img-wrapper img {
   width: 100%;
 }*/
-
 .reasons-big img {
   width: 100%;
 }
@@ -770,7 +769,7 @@ button.plus {
 }
 
 .map {
-  background-image: url("../img/map.jpg");
+  background-image: url("../img/map.png");
   background-size: 1280px 747px;
   z-index: 0;
   overflow: hidden;
@@ -918,7 +917,6 @@ button.plus {
   vertical-align: middle;
 }
 /*inner page*/
-
 .filter {
   background-image: url("../img/filter-background.jpg");
   background-repeat: no-repeat;
