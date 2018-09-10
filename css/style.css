@@ -915,6 +915,7 @@ button.plus {
   margin-left: 10px;
   display: inline-block;
   vertical-align: middle;
+  overflow: hidden;
 }
 /*inner page*/
 .filter {
