@@ -2,7 +2,6 @@
   font-family: "PT Sans";
   src: url("../fonts/ptsans.woff") format("woff"), url("../fonts/ptsans.woff2") format("woff2");
 }
-
 @font-face {
   font-family: "PT Sans";
   src: url("../fonts/ptsansbold.woff") format("woff"), url("../fonts/ptsansbold.woff2") format("woff2");
@@ -244,10 +243,13 @@ li.selected a {
   width: 66.6%;
   overflow: hidden;
   max-height: 257px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
-
 /*.reasons-img-wrapper img {
   width: 100%;
 }*/
@@ -285,6 +287,10 @@ li.selected a {
   padding-top: 48px;
   padding-bottom: 39px;
   /*39 58*/
+}
+
+.reasons-big-content:last-child {
+  padding-top: 46px;
 }
 
 .reasons-big-content h3 {
@@ -383,6 +389,7 @@ li.selected a {
   margin-bottom: 22px;
   margin-top: -22px;
 }
+
 .food::before {
   content: url("../img/icon-food.svg");
   width: 75px;
@@ -391,6 +398,7 @@ li.selected a {
   margin-top: -21px;
   margin-bottom: 21px;
 }
+
 .gifts::before {
   content: url("../img/icon-gifts.svg");
   height: 77px;
@@ -483,14 +491,24 @@ p.search-date input {
   min-width: 336px;
 }
 
+p.search-date input:first-child {
+  padding-top: 5px;
+}
+
 p.search-date {
   position: relative;
   padding-top: 55px;
 }
 
 .search-date:nth-child(1) {
-  margin-top: 48px;
+  margin-top: 56px;
 }
+
+.search-date:nth-child(2) {
+  margin-top: 13px;
+  margin-bottom: 13px;
+}
+
 p.search-date label {
   max-width: 95px;
   padding-top: 6px;
@@ -505,6 +523,8 @@ p.search-date label {
   position: absolute;
   right: 9px;
   top: 50%;
+  -webkit-transform: translate(0,-85%);
+  -ms-transform: translate(0,-85%);
   transform: translate(0,-85%);
 }
 
@@ -586,7 +606,7 @@ button.plus {
 }
 
 .guests-amount {
-  padding-top: 5px;
+  padding-top: 3px;
   width: 113px;
   min-height: 33px;
   border: none;
@@ -602,8 +622,8 @@ button.plus {
   font-weight: bold;
   line-height: 26px;
   position: relative;
-  padding-top: 5px;
-  padding-left: 14px;
+  margin-left: 53px;
+  margin-right: 49px;
   text-align: left;
 }
 
@@ -630,24 +650,24 @@ button.plus {
   -webkit-animation: shake 0.8s;
   animation: shake 0.8s;
 }
-
 @-webkit-keyframes modal-animation {
   0% {
     opacity: 1;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
   }
+
   100% {
     opacity: 1;
   }
 }
-
 @keyframes modal-animation {
   0% {
     opacity: 0;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
   }
+
   100% {
     opacity: 1;
   }
@@ -656,13 +676,13 @@ button.plus {
 .map iframe {
   width: 100%;
 }
-
 @-webkit-keyframes shake {
   0%,
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
+
   10%,
   30%,
   50%,
@@ -671,6 +691,7 @@ button.plus {
     -webkit-transform: translateY(-20px);
     transform: translateY(-20px);
   }
+
   20%,
   40%,
   60%,
@@ -679,13 +700,13 @@ button.plus {
     transform: translateY(-5px);
   }
 }
-
 @keyframes shake {
   0%,
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
+
   10%,
   30%,
   50%,
@@ -694,6 +715,7 @@ button.plus {
     -webkit-transform: translateY(-20px);
     transform: translateY(-20px);
   }
+
   20%,
   40%,
   60%,
@@ -725,10 +747,15 @@ button.plus {
 .search p {
   font-weight: bold;
   margin: 0;
-  padding: 7px 0px;
+  padding: 0;
   line-height: 26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  align-content: flex-start;
   margin-left: 55px;
   margin-right: 55px;
 }
@@ -740,7 +767,6 @@ button.plus {
 
 .adults-amount-label {
   margin-right: 38px;
-  margin-left: 39px;
 }
 
 .map {
@@ -766,7 +792,7 @@ button.plus {
   width: 100%;
   bottom: 0;
   padding-bottom: 38px;
-  padding-top: 31px;
+  padding-top: 35px;
 }
 
 .main-footer a {
@@ -809,6 +835,7 @@ button.plus {
 .main-footer-social li {
   display: inline-block;
   vertical-align: middle;
+  margin-right: 2px;
 }
 
 .social-button {
@@ -890,7 +917,6 @@ button.plus {
   display: inline-block;
   vertical-align: middle;
 }
-
 /*inner page*/
 
 .filter {
@@ -898,22 +924,29 @@ button.plus {
   background-repeat: no-repeat;
   background-position: center;
   background-color: #81b3d2;
+  background-position-y: 17%;
 }
 
 .filter-list {
   list-style: none;
   margin: 0;
-  padding: 0 0 9px;
+  padding: 4px 0 7px;
+}
+
+fieldset:last-of-type .filter-list {
+  padding-left: 2px;
 }
 
 .filter-list-item {
-  padding-bottom: 25px;
+  padding-bottom: 24px;
+  padding-top: 1px;
 }
 
 .filter-list-checkbox {
   position: relative;
-  padding-left: 38px;
+  padding-left: 41px;
   cursor: pointer;
+  padding-top: 3px;
 }
 
 .filter-list-checkbox input[type="checkbox"]+.checkbox-indicator {
@@ -946,15 +979,15 @@ button.plus {
   line-height: 21px;
   color: white;
   padding-left: 53px;
-  padding-right: 73px;
-  padding-top: 30px;
+  padding-right: 72px;
+  padding-top: 28px;
 }
 
 .filter-form fieldset {
   border: none;
   margin: 0;
   padding: 0;
-  margin-left: 20px;
+  margin-left: 18px;
   width: 22%;
 }
 
@@ -975,6 +1008,7 @@ button.plus {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  max-width: 319px;
 }
 
 .price-form h3 {
@@ -983,12 +1017,19 @@ button.plus {
   line-height: 21px;
   margin: 0;
   padding: 0;
+  margin-left: 2px;
 }
 
 .price-form-input {
   border: 2px solid white;
   position: relative;
-  margin-top: 8px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-form-input input:first-of-type {
+  padding-left: 4px;
 }
 
 .price-form-input::after {
@@ -1005,6 +1046,7 @@ button.plus {
 }
 
 .text-range {
+  font-family: "PT sans";
   font-size: 14px;
   line-height: 21px;
   background-color: rgba(0, 0, 0, 0);
@@ -1012,13 +1054,14 @@ button.plus {
   color: white;
   text-align: center;
   text-transform: uppercase;
-  padding-top: 4px;
+  padding-top: 5px;
   padding-bottom: 6px;
 }
 
 .range-wrapper {
   position: relative;
   min-height: 25px;
+  margin-top: -1px;
 }
 
 .range-wrapper::before {
@@ -1065,17 +1108,18 @@ button.plus {
 }
 
 .button-white {
+  font-family: "PT sans";
   text-transform: uppercase;
   font-size: 14px;
   line-height: 21px;
   color: white;
   border: solid 2px white;
   background-color: rgba(0, 0, 0, 0);
-  max-width: 137px;
-  margin: 31px 81px;
-  padding: 5px 38px;
+  margin: 30px 96px 30px 85px;
+  padding: 6px 34px;
   cursor: pointer;
   border-radius: 2px;
+  word-wrap: break-word;
 }
 
 .button-white:focus,
@@ -1087,6 +1131,8 @@ button.plus {
 .search-result .search-result-count {
   font-size: 21px;
   font-weight: bold;
+  margin-bottom: 21px;
+  margin-top: 21px;
   margin-right: 48px;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -1181,13 +1227,14 @@ button.plus {
 .search-result-list {
   list-style: none;
   margin: 0;
-  padding: 0 0 124px;
+  padding: 0 0 122px;
 }
 
 .search-result-list .button {
   line-height: 21px;
   font-weight: bold;
-  padding: 4px 16px;
+  padding: 4px 17px;
+  margin-right: 2px;
 }
 
 .search-result-list p,
@@ -1199,11 +1246,11 @@ button.plus {
 .search-result-list .rating-text {
   line-height: 21px;
   color: #666666;
-  margin-top: 40px;
+  margin-top: 38px;
 }
 
 .search-result-item {
-  padding: 28px 6% 32px;
+  padding: 25px 6% 30px;
   margin-top: 10px;
   border-bottom: 1px solid #e5e5e5;
   display: -webkit-box;
@@ -1211,8 +1258,9 @@ button.plus {
   display: flex;
 }
 
-.search-result-item img {
+.preview {
   margin-right: 30px;
+  padding-top: 5px;
 }
 
 .search-result-item:nth-child(2) {
@@ -1221,7 +1269,7 @@ button.plus {
 }
 
 .search-result-item:nth-child(3) {
-  padding-top: 17px;
+  padding-top: 15px;
 }
 
 .search-result-item:first-child {
@@ -1242,23 +1290,31 @@ button.plus {
 }
 
 .stars {
+  margin-right: 0;
+  margin-top: 4px;
+}
+
+.stars .star:nth-child(1) {
   margin-right: 3px;
 }
 
+.stars .star:nth-child(2) {
+  margin-right: 2px;
+}
+
 .search-item-wrapper h3 {
-  padding-bottom: 5px;
+  padding-bottom: 6px;
 }
 
 .search-item-wrapper p {
-  padding-bottom: 13px;
+  padding-bottom: 14px;
 }
 
 .search-item-wrapper .button-blue:focus,
 .search-item-wrapper .button-blue:hover {
   background-color: #669ec0;
 }
-
-  {
+{
   background-color: #669ec0;
 }
 
@@ -1284,7 +1340,7 @@ button.plus {
 
 .rating p {
   background-color: #f2f2f2;
-  padding: 3px 13px;
+  padding: 3px 14px;
 }
 
 .star {
@@ -1303,7 +1359,7 @@ button.plus {
   background-position: center;
   background-repeat: no-repeat;
   background-color: white;
-  vertical-align: middle;
+  vertical-align: baseline;
   width: 11px;
   height: 10px;
   font-size: 0;
@@ -1325,7 +1381,6 @@ button.plus {
 }
 
 .up {
-  padding-left: 5px;
   margin-right: -5px;
 }
 
