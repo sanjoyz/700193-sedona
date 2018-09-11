@@ -458,6 +458,7 @@ li.selected a {
 
 a.hotel-button {
   display: inline-block;
+  vertical-align: middle;
   font-weight: bold;
   font-size: 21px;
   width: 100%;
@@ -495,7 +496,7 @@ p.search-date input:first-child {
 }
 
 .search-date:nth-child(1) {
-  margin-top: 56px;
+  margin-top: 55px;
 }
 
 .search-date:nth-child(2) {
@@ -837,7 +838,6 @@ button.plus {
 }
 
 .social-button {
-  font-size: 0;
   display: inline-block;
   vertical-align: middle;
   background-color: #81b3d2;
@@ -908,7 +908,6 @@ button.plus {
 }
 
 .developer-logo {
-  font-size: 0;
   width: 115px;
   height: 41px;
   margin-left: 10px;
@@ -1360,7 +1359,6 @@ fieldset:last-of-type .filter-list {
   vertical-align: baseline;
   width: 11px;
   height: 10px;
-  font-size: 0;
   cursor: pointer;
   padding-bottom: 7px;
 }
