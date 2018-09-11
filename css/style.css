@@ -554,28 +554,27 @@ button.minus {
   -webkit-transform: translate(13px);
   -ms-transform: translate(13px);
   transform: translate(13px);
-  padding-top: 10px;
   font-size: 34px;
-  line-height: 14px;
+  line-height: 28px;
   max-width: 12px;
   color: #a9a9a9;
   background-color: #f2f2f2;
 }
-
 button.plus {
-  max-width: 16px;
+  max-width: 15px;
   color: #a9a9a9;
   background-color: #f2f2f2;
   padding-top: 3px;
-  font-size: 28px;
+  font-size: 24px;
+  line-height: 30px;
 }
-
-.search-buttons-wrapper button.plus:nth-child(1) {
-  right: 150px;
+.plus.adults {
+  right: 245px;
+  top: 0px;
 }
-
 .search-buttons-wrapper button.plus:last-child {
-  right: 10px;
+  right: 11px;
+  top: 0px;
 }
 
 .button {
@@ -760,11 +759,12 @@ button.plus {
 }
 
 .children-amount-label {
-  margin-left: 48px;
+  margin-left: 50px;
+  margin-right: 24px;
 }
 
 .adults-amount-label {
-  margin-right: 38px;
+  margin-right: 36px;
 }
 
 .map {
