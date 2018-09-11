@@ -484,19 +484,14 @@ p.search-date input {
   padding: 0;
   margin: 0;
   padding-left: 10px;
-  padding-top: 6px;
-  padding-bottom: 6px;
+  padding-top: 1px;
   margin-bottom: 16px;
   min-width: 336px;
+  min-height: 38px;
 }
 
 p.search-date input:first-child {
   padding-top: 5px;
-}
-
-p.search-date {
-  position: relative;
-  padding-top: 55px;
 }
 
 .search-date:nth-child(1) {
@@ -510,7 +505,6 @@ p.search-date {
 
 p.search-date label {
   max-width: 95px;
-  padding-top: 6px;
 }
 
 .calendar-icon {
@@ -569,14 +563,19 @@ button.minus {
 }
 
 button.plus {
-  max-width: 12px;
+  max-width: 16px;
   color: #a9a9a9;
   background-color: #f2f2f2;
-  -webkit-transform: translate(-28px);
-  -ms-transform: translate(-28px);
-  transform: translate(-28px);
   padding-top: 3px;
   font-size: 28px;
+}
+
+.search-buttons-wrapper button.plus:nth-child(1) {
+  right: 150px;
+}
+
+.search-buttons-wrapper button.plus:last-child {
+  right: 10px;
 }
 
 .button {
@@ -605,7 +604,7 @@ button.plus {
 }
 
 .guests-amount {
-  padding-top: 3px;
+  padding: 0;
   width: 113px;
   min-height: 33px;
   border: none;
@@ -617,12 +616,16 @@ button.plus {
   text-align: center;
 }
 
+.guests-amount:nth-child(2) {
+  margin-left: 25px;
+}
+
 .search-buttons-wrapper {
   font-weight: bold;
   line-height: 26px;
   position: relative;
-  margin-left: 53px;
-  margin-right: 49px;
+  margin-left: 56px;
+  margin-right: 54px;
   text-align: left;
 }
 
@@ -744,24 +747,20 @@ button.plus {
 }
 
 .search p {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  position: relative;
   font-weight: bold;
   margin: 0;
   padding: 0;
   line-height: 26px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  align-content: flex-start;
-  margin-left: 55px;
-  margin-right: 55px;
+  margin-left: 56px;
+  margin-right: 54px;
 }
 
 .children-amount-label {
-  margin-left: 51px;
-  margin-right: 24px;
+  margin-left: 48px;
 }
 
 .adults-amount-label {
