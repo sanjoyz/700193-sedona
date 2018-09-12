@@ -21,6 +21,11 @@ body {
   min-width: 768px;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -177,7 +182,7 @@ li.selected a {
   background-color: #575258;
   background-repeat: no-repeat;
   background-size: 100%;
-  background-position-y: 30%;
+  background-position-y: 28%;
   min-height: 507px;
 }
 
@@ -484,9 +489,9 @@ p.search-date input {
   line-height: 26px;
   padding: 0;
   margin: 0;
-  padding-left: 10px;
+  padding-left: 11px;
   padding-top: 1px;
-  margin-bottom: 16px;
+  margin-bottom: 15px;
   min-width: 336px;
   min-height: 38px;
 }
@@ -506,6 +511,8 @@ p.search-date input:first-child {
 
 p.search-date label {
   max-width: 95px;
+  padding-bottom: 15px;
+  padding-right: 19px;
 }
 
 .calendar-icon {
@@ -551,31 +558,47 @@ p.search-date label {
   color: #81b3d2;
 }
 
-button.minus {
-  -webkit-transform: translate(13px);
-  -ms-transform: translate(13px);
-  transform: translate(13px);
+.minus {
   font-size: 34px;
   line-height: 28px;
   max-width: 12px;
   color: #a9a9a9;
   background-color: #f2f2f2;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
-button.plus {
+
+.minus.children {
+  right: 89px;
+  padding-bottom: 5px;
+}
+
+.minus.adults {
+  right: 322px;
+  padding-bottom: 5px;
+}
+
+.plus {
   max-width: 15px;
   color: #a9a9a9;
   background-color: #f2f2f2;
   padding-top: 3px;
   font-size: 24px;
   line-height: 30px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
+
 .plus.adults {
   right: 245px;
-  top: 0px;
 }
-.search-buttons-wrapper button.plus:last-child {
+
+.plus.children {
   right: 11px;
-  top: 0px;
 }
 
 .button {
@@ -606,6 +629,8 @@ button.plus {
 .guests-amount {
   padding: 0;
   width: 113px;
+  padding-bottom: 3px;
+  padding-top: 3px;
   min-height: 33px;
   border: none;
   font-weight: bold;
@@ -621,6 +646,15 @@ button.plus {
 }
 
 .search-buttons-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   font-weight: bold;
   line-height: 26px;
   position: relative;
@@ -632,7 +666,7 @@ button.plus {
 .search {
   position: absolute;
   text-align: center;
-  min-width: 567px;
+  min-width: 568px;
   margin: 0 auto;
   background-color: #ffffff;
   -webkit-animation: modal-animation 0.8s;
@@ -747,9 +781,15 @@ button.plus {
 }
 
 .search p {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
-  align-items: baseline;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   position: relative;
   font-weight: bold;
   margin: 0;
@@ -762,10 +802,12 @@ button.plus {
 .children-amount-label {
   margin-left: 50px;
   margin-right: 24px;
+  padding-top: 2px;
 }
 
 .adults-amount-label {
-  margin-right: 36px;
+  padding-right: 36px;
+  padding-top: 2px;
 }
 
 .map {
@@ -946,6 +988,10 @@ fieldset:last-of-type .filter-list {
   padding-top: 3px;
 }
 
+.filter-list label[for="filter-apparts"] {
+  padding-left: 38px;
+}
+
 .filter-list-checkbox input[type="checkbox"]+.checkbox-indicator {
   position: absolute;
   top: 0;
@@ -1021,7 +1067,11 @@ fieldset:last-of-type .filter-list {
   border: 2px solid white;
   position: relative;
   margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
@@ -1291,12 +1341,8 @@ fieldset:last-of-type .filter-list {
   margin-top: 4px;
 }
 
-.stars .star:nth-child(1) {
-  margin-right: 3px;
-}
-
-.stars .star:nth-child(2) {
-  margin-right: 2px;
+.stars .star:nth-child(2n) {
+  margin-left: 3px;
 }
 
 .search-item-wrapper h3 {
@@ -1360,7 +1406,6 @@ fieldset:last-of-type .filter-list {
   width: 11px;
   height: 10px;
   cursor: pointer;
-  padding-bottom: 7px;
 }
 
 .arrow.active {

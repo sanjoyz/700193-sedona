@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>Седона</title>
     <link href="css/normalize.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
 
   <body>
@@ -175,13 +175,13 @@
                 </p>
                 <div class="search-buttons-wrapper">
                   <label for="adults-amount" class="adults-amount-label">Взрослые:</label>
-                  <button type="button" class="minus">-</button>
-                  <input class="guests-amount" type="text" placeholder="2" id="adults-amount">
+                  <button type="button" class="minus adults">-</button>
+                  <input class="guests-amount" type="text" placeholder="0" value="2" id="adults-amount">
                   <button type="button" class="plus adults">+</button>
                   <label for="children-amount" class="children-amount-label">Дети:</label>
-                  <button type="button" class="minus">-</button>
-                  <input class="guests-amount" type="text" placeholder="0" id="children-amount">
-                  <button type="button" class="plus">+</button>
+                  <button type="button" class="minus children">-</button>
+                  <input class="guests-amount" type="text" placeholder="0" value="0" id="children-amount">
+                  <button type="button" class="plus children">+</button>
                 </div>
                 <button class="button button-blue" type="submit">Найти</button>
               </form>
@@ -259,7 +259,7 @@
         </div>
       </footer>
     </div>
-    <script src="js/scripts.js"></script>
+    <script src="js/scripts.min.js"></script>
   </body>
 
 </html>
