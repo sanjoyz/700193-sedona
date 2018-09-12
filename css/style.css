@@ -513,6 +513,7 @@ p.search-date label {
   max-width: 95px;
   padding-bottom: 15px;
   padding-right: 19px;
+  word-wrap: break-word;
 }
 
 .calendar-icon {
@@ -557,6 +558,18 @@ p.search-date label {
 .search-buttons-wrapper button:active {
   color: #81b3d2;
 }
+.input-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.adults-amount-label p.adults {
+  margin: 0;
+  padding-right: 40px;
+  max-width: 74px;
+  word-wrap: break-word;
+}
+
 
 .minus {
   font-size: 34px;
@@ -564,22 +577,9 @@ p.search-date label {
   max-width: 12px;
   color: #a9a9a9;
   background-color: #f2f2f2;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+  left: 0px;
+  top: 0px;
 }
-
-.minus.children {
-  right: 89px;
-  padding-bottom: 5px;
-}
-
-.minus.adults {
-  right: 322px;
-  padding-bottom: 5px;
-}
-
 .plus {
   max-width: 15px;
   color: #a9a9a9;
@@ -587,18 +587,7 @@ p.search-date label {
   padding-top: 3px;
   font-size: 24px;
   line-height: 30px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-.plus.adults {
-  right: 245px;
-}
-
-.plus.children {
-  right: 11px;
+  right: 5px;
 }
 
 .button {
@@ -629,8 +618,6 @@ p.search-date label {
 .guests-amount {
   padding: 0;
   width: 113px;
-  padding-bottom: 3px;
-  padding-top: 3px;
   min-height: 33px;
   border: none;
   font-weight: bold;
@@ -649,9 +636,6 @@ p.search-date label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -800,14 +784,17 @@ p.search-date label {
 }
 
 .children-amount-label {
-  margin-left: 50px;
-  margin-right: 24px;
-  padding-top: 2px;
+  display: flex;
+  margin-left: 54px;
+}
+.children-amount-label p.childrens {
+  margin: 0;
+  margin-right: 27px;
 }
 
 .adults-amount-label {
-  padding-right: 36px;
-  padding-top: 2px;
+  display: flex;
+  word-wrap: break-word;
 }
 
 .map {
