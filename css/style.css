@@ -589,9 +589,8 @@ p.search-date label {
   margin: 0;
   padding-top: 4px;
   position: absolute;
-  top: 48%;
-  transform: translateY(-50%);
   right: 7px;
+  top: 0;
 }
 
 .button {
