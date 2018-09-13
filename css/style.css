@@ -258,6 +258,7 @@ li.selected a {
 /*.reasons-img-wrapper img {
   width: 100%;
 }*/
+
 .reasons-big img {
   width: 100%;
 }
@@ -788,6 +789,8 @@ p.search-date label {
   display: flex;
   word-wrap: break-word;
   margin-left: 54px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   position: relative;
 }
@@ -956,6 +959,7 @@ p.search-date label {
   overflow: hidden;
 }
 /*inner page*/
+
 .filter {
   background-image: url("../img/filter-background.jpg");
   background-repeat: no-repeat;
