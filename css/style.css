@@ -543,13 +543,6 @@ p.search-date label {
   color: #81b3d2;
 }
 
-.search-buttons-wrapper button {
-  border: none;
-  margin: 0;
-  padding: 0;
-  position: absolute;
-}
-
 .search-buttons-wrapper button:focus,
 .search-buttons-wrapper button:hover {
   color: black;
@@ -558,36 +551,53 @@ p.search-date label {
 .search-buttons-wrapper button:active {
   color: #81b3d2;
 }
+
 .input-wrapper {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
+
 .adults-amount-label p.adults {
   margin: 0;
   padding-right: 40px;
+  padding-top: 3px;
   max-width: 74px;
   word-wrap: break-word;
+  display: block;
 }
-
 
 .minus {
-  font-size: 34px;
-  line-height: 28px;
-  max-width: 12px;
+  font-size: 38px;
+  line-height: 32px;
+  max-width: 26px;
   color: #a9a9a9;
   background-color: #f2f2f2;
-  left: 0px;
-  top: 0px;
+  border: none;
+  position: absolute;
+  left: 4px;
+  top: 0;
+  margin: 0;
+  padding-top: 2px;
 }
+
 .plus {
-  max-width: 15px;
+  max-width: 25px;
   color: #a9a9a9;
   background-color: #f2f2f2;
-  padding-top: 3px;
   font-size: 24px;
-  line-height: 30px;
-  right: 5px;
+  line-height: 32px;
+  border: none;
+  margin: 0;
+  padding-top: 3px;
+  position: absolute;
+  top: 0;
+  right: 7px;
 }
 
 .button {
@@ -616,7 +626,7 @@ p.search-date label {
 }
 
 .guests-amount {
-  padding: 0;
+  padding: 4px 0 2px;
   width: 113px;
   min-height: 33px;
   border: none;
@@ -784,17 +794,24 @@ p.search-date label {
 }
 
 .children-amount-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-left: 54px;
 }
+
 .children-amount-label p.childrens {
-  margin: 0;
-  margin-right: 27px;
+  margin: 0 27px 0 0;
 }
 
 .adults-amount-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   word-wrap: break-word;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .map {
