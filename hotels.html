@@ -37,7 +37,7 @@
       <main class="page-hotels">
         <section class="filter">
           <h2 class="visually-hidden">Фильтр отелей</h2>
-          <form class="filter-form" method="post" action="https://echo.htmlacademy.ru" oninput="costvalue.value = cost.valueAsNumber">
+          <form class="filter-form" method="post" action="https://echo.htmlacademy.ru">
             <fieldset>
               <legend>Инфраструктура:</legend>
               <ul class="filter-list">
@@ -96,10 +96,15 @@
             <div class="price-form">
               <h3>Стоимость в сутки (р):</h3>
               <div class="price-form-input">
-                <input type="text" class="text-range" value="от 0" id="range-min">
-                <label class="visually-hidden" for="range-min">Минимальная цена</label>
-                <input type="text" class="text-range" value="до 3000" id="range-max">
-                <label class="visually-hidden" for="range-min">Максимальная цена</label>
+                <div class="price-form-wrapper">
+                  <label class="" for="range-min">от</label>
+                  <input type="text" class="text-range" value="0" id="range-min" name="min-price">
+                </div>
+                <div class="price-form-wrapper">
+                  <label class="" for="range-min">до</label>
+                  <input type="text" class="text-range" value="3000" id="range-max" name="max-price">
+                </div>
+
               </div>
               <div class="range-wrapper">
                 <button class="range-button min" type="button"></button>

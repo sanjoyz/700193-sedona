@@ -1077,8 +1077,12 @@ fieldset:last-of-type .filter-list {
   justify-content: space-between;
 }
 
-.price-form-input input:first-of-type {
-  padding-left: 4px;
+.price-form-input .price-form-wrapper:first-child {
+  padding-left: 66px;
+}
+
+.price-form-wrapper {
+  word-wrap: break-word;
 }
 
 .price-form-input::after {
@@ -1101,10 +1105,11 @@ fieldset:last-of-type .filter-list {
   background-color: rgba(0, 0, 0, 0);
   border: none;
   color: white;
-  text-align: center;
+  text-align: left;
   text-transform: uppercase;
   padding-top: 5px;
   padding-bottom: 6px;
+  max-width: 81px;
 }
 
 .range-wrapper {
